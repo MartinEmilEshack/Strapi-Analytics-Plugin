@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/revenues",
+      "handler": "revenue.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/revenues/count",
+      "handler": "revenue.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/revenues/:id",
+      "handler": "revenue.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/revenues",
+      "handler": "revenue.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/revenues/:id",
+      "handler": "revenue.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/revenues/:id",
+      "handler": "revenue.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

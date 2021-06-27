@@ -1,0 +1,14 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.page-container > .content {
+  width: 100%;
+  flex-grow: 2;
+  display: flex;
+  flex-flow: row wrap;
+}

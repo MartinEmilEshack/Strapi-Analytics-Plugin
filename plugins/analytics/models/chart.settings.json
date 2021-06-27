@@ -1,0 +1,39 @@
+{
+	"kind": "collectionType",
+	"collectionName": "charts",
+	"info": {
+		"name": "chart",
+		"description": "The data charts",
+		"mainField": "title"
+	},
+	"options": {
+		"draftAndPublish": false,
+		"timestamps": true,
+		"increments": true,
+		"comment": ""
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"required": true
+		},
+		"type": {
+			"type": "string",
+			"required": true
+		},
+		"fullWidth": {
+			"type": "boolean",
+			"required": true
+		},
+		"data": {
+			"type": "json"
+		},
+		"options": {
+			"type": "json"
+		},
+		"page": {
+			"model": "analytics-page",
+			"plugin": "analytics"
+		}
+	}
+}

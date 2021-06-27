@@ -1,0 +1,72 @@
+{
+	"routes": [
+		{
+			"method": "POST",
+			"path": "/create-chart",
+			"handler": "analytics.createChart",
+			"config": {
+				"policies": [
+					"plugins::users-permissions.isAuthenticated"
+				]
+			}
+		},
+		{
+			"method": "GET",
+			"path": "/find-charts/:pageID",
+			"handler": "analytics.findCharts",
+			"config": {
+				"policies": [
+					"plugins::users-permissions.isAuthenticated"
+				]
+			}
+		},
+		{
+			"method": "GET",
+			"path": "/find-models",
+			"handler": "analytics.findModels",
+			"config": {
+				"policies": [
+					"plugins::users-permissions.isAuthenticated"
+				]
+			}
+		},
+		{
+			"method": "GET",
+			"path": "/find-pages",
+			"handler": "analytics.findPages",
+			"config": {
+				"policies": [
+					"plugins::users-permissions.isAuthenticated"
+				]
+			}
+		},
+		{
+			"method": "POST",
+			"path": "/create-page",
+			"handler": "analytics.createPage",
+			"config": {
+				"policies": [
+					"plugins::users-permissions.isAuthenticated"
+				]
+			}
+		},
+		{
+			"method": "DELETE",
+			"path": "/delete-page/:id",
+			"handler": "analytics.deletePage",
+			"config": {
+				"policies": [
+					"plugins::users-permissions.isAuthenticated"
+				]
+			}
+		},
+		{
+			"method": "GET",
+			"path": "/",
+			"handler": "analytics.index",
+			"config": {
+				"policies": []
+			}
+		}
+	]
+}

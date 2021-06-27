@@ -1,0 +1,38 @@
+{
+	"name": "strapi-plugin-analytics",
+	"version": "0.0.0",
+	"description": "This is the description of the plugin.",
+	"strapi": {
+		"name": "analytics",
+		"icon": "plug",
+		"description": "Description of analytics plugin."
+	},
+	"dependencies": {
+		"@toast-ui/react-chart": "^4.3.4",
+		"antd": "^4.16.0",
+		"babel-loader": "8.1.0",
+		"@babel/plugin-proposal-class-properties": "^7.13.0",
+		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.2",
+		"@babel/plugin-proposal-object-rest-spread": "^7.14.2",
+		"@babel/plugin-proposal-optional-chaining": "^7.14.2",
+		"@babel/preset-env": "^7.14.2",
+		"@babel/preset-react": "^7.13.13"
+	},
+	"author": {
+		"name": "Martin Emil",
+		"email": "mar10martinemil@gmail.com",
+		"url": ""
+	},
+	"maintainers": [
+		{
+			"name": "Martin Emil",
+			"email": "mar10martinemil@gmail.com",
+			"url": ""
+		}
+	],
+	"engines": {
+		"node": ">=10.16.0 <=14.x.x",
+		"npm": ">=6.0.0"
+	},
+	"license": "MIT"
+}

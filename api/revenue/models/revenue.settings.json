@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "revenues",
+  "info": {
+    "name": "Revenue"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OrderDate": {
+      "type": "date"
+    },
+    "DueDate": {
+      "type": "date"
+    },
+    "OrderNumber": {
+      "type": "biginteger"
+    },
+    "ProductID": {
+      "type": "integer"
+    },
+    "SalesPersonID": {
+      "type": "integer"
+    },
+    "SalesPerson": {
+      "type": "string"
+    },
+    "Supervisor": {
+      "type": "string"
+    },
+    "Team": {
+      "type": "string"
+    },
+    "QtyItems": {
+      "type": "integer"
+    },
+    "UnitPrice": {
+      "type": "decimal"
+    },
+    "SalesAmount": {
+      "type": "decimal"
+    }
+  }
+}
